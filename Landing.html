@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Landing Page</title>
+
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Fontawesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+
+  <!-- Additional CSS -->
+  <link href="styles.css" rel="stylesheet">
+
+  <!-- Additional JavaScript -->
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="text-lg">Logo</div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Menu</a></li>
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero bg-cover bg-center" style="background-image: url('https://source.unsplash.com/featured/1280x720/?restaurant')">
+    <div class="container mx-auto py-24 text-center">
+      <h1 class="text-4xl font-bold text-white mb-4">Welcome to our Restaurant</h1>
+      <a href="#" class="bg-red-600 hover:bg-red-700 text-white py-2 px-6 rounded-full focus:outline-none focus:ring-2 focus:ring-red-600">Book a Table</a>
+    </div>
+  </section>
+
+  <section class="features py-24">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="feature-card">
+        <i class="fas fa-utensils text-4xl mb-4"></i>
+        <h2 class="text-xl font-bold mb-4">Delicious Food</h2>
+        <p class="text-gray-500 mb-4">Experience our wide range of mouth-watering dishes curated with the finest ingredients.</p>
+        <a href="#" class="text-blue-600 hover:underline">Learn More</a>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-music text-4xl mb-4"></i>
+        <h2 class="text-xl font-bold mb-4">Live Music</h2>
+        <p class="text-gray-500 mb-4">Enjoy the soothing melodies performed live by talented musicians while dining.</p>
+        <a href="#" class="text-blue-600 hover:underline">Learn More</a>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-glass-cheers text-4xl mb-4"></i>
+        <h2 class="text-xl font-bold mb-4">Celebrations</h2>
+        <p class="text-gray-500 mb-4">Let us host your special occasions, and create unforgettable memories together.</p>
+        <a href="#" class="text-blue-600 hover:underline">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="individual-feature bg-gray-100 py-24">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="flex items-center">
+          <img src="https://source.unsplash.com/featured/1280x720/?food" alt="Food" class="rounded-md">
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Discover Our Unique Dishes</h2>
+          <p class="text-gray-500 mb-4">Indulge in our chef's creative culinary creations that will delight your taste buds and leave you craving for more.</p>
+          <a href="#" class="text-blue-600 hover:underline">View Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="individual-feature bg-white py-24">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Experience Our Captivating Ambience</h2>
+          <p class="text-gray-500 mb-4">Immerse yourself in an enchanting atmosphere that enhances your dining experience and makes every moment memorable.</p>
+          <a href="#" class="text-blue-600 hover:underline">View Gallery</a>
+        </div>
+        <div class="flex items-center">
+          <img src="https://source.unsplash.com/featured/1280x720/?restaurant,interior" alt="Restaurant Interior"
+            class="rounded-md">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial py-24">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-12">What Our Customers Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="testimonial-card">
+          <p class="text-gray-500 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et maximus arcu. Donec facilisis lacus quis feugiat placerat.</p>
+          <p class="font-bold">John Doe</p>
+          <p class="text-gray-500">Customer</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="text-gray-500 mb-4">Sed et maximus arcu, consectetur adipiscing elit. Donec facilisis lacus quis feugiat placerat. Lorem ipsum dolor sit amet.</p>
+          <p class="font-bold">Jane Smith</p>
+          <p class="text-gray-500">Customer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog py-24 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-12">Recent Blog Posts</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div class="blog-card">
+          <h3 class="text-xl font-bold mb-2">The Art of Plating</h3>
+          <p class="text-gray-500 mb-4">Discover the secrets to creating visually stunning and appetizing dishes.</p>
+          <a href="#" class="text-blue-600 hover:underline">Read More</a>
+        </div>
+        <div class="blog-card">
+          <h3 class="text-xl font-bold mb-2">Celebrating Our 5th Anniversary</h3>
+          <p class="text-gray-500 mb-4">Join us as we commemorate five years of excellence in serving our beloved customers.</p>
+          <a href="#" class="text-blue-600 hover:underline">Read More</a>
+        </div>
+        <div class="blog-card">
+          <h3 class="text-xl font-bold mb-2">Creating Memorable Diners</h3>
+          <p class="text-gray-500 mb-4">Learn how to design a captivating dining experience that keeps customers coming back.</p>
+          <a href="#" class="text-blue-600 hover:underline">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq py-24">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-12">Frequently Asked Questions</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-lg font-bold mb-2">Do you have vegetarian options?</h3>
+          <p class="text-gray-500 mb-4">Yes, we offer a wide variety of delicious vegetarian dishes to cater to our vegetarian customers.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2">Can I make a reservation online?</h3>
+          <p class="text-gray-500 mb-4">Certainly! You can easily make a reservation online through our website or by calling our reservation hotline.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2">Do you offer private dining options?</h3>
+          <p class="text-gray-500 mb-4">Yes, we have private dining rooms available for special occasions or business events. Please contact us for more information.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2">What are your opening hours?</h3>
+          <p class="text-gray-500 mb-4">We are open from Monday to Sunday, from 11:00 AM until 10:00 PM. We look forward to welcoming you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team py-24 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-12">Meet Our Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Team Member" class="rounded-full mb-4">
+          <h3 class="text-lg font-bold mb-2">John Smith</h3>
+          <p class="text-gray-500">Head Chef</p>
+          <div class="social-icons mt-4">
+            <a href="#"><i class="fab fa-facebook-f text-gray-500"></i></a>
+            <a href="#"><i class="fab fa-twitter text-gray-500"></i></a>
+            <a href="#"><i class="fab fa-instagram text-gray-500"></i></a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Team Member" class="rounded-full mb-4">
+          <h3 class="text-lg font-bold mb-2">Jane Doe</h3>
+          <p class="text-gray-500">Sous Chef</p>
+          <div class="social-icons mt-4">
+            <a href="#"><i class="fab fa-facebook-f text-gray-500"></i></a>
+            <a href="#"><i class="fab fa-twitter text-gray-500"></i></a>
+            <a href="#"><i class="fab fa-instagram text-gray-500"></i></a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Team Member" class="rounded-full mb-4">
+          <h3 class="text-lg font-bold mb-2">Sarah Johnson</h3>
+          <p class="text-gray-500">Pastry Chef</p>
+          <div class="social-icons mt-4">
+            <a href="#"><i class="fab fa-facebook-f text-gray-500"></i></a>
+            <a href="#"><i class="fab fa-twitter text-gray-500"></i></a>
+            <a href="#"><i class="fab fa-instagram text-gray-500"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter py-24">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+      <p class="text-gray-500 mb-4">Stay updated with our latest offers, events, and news.</p>
+      <form class="flex justify-center">
+        <input type="email" placeholder="Your Email" class="border border-gray-300 rounded-l-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600">
+        <button type="submit" class="bg-red-600 text-white px-6 py-2 rounded-r-md">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="contact-form py-24">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-12">Contact Us</h2>
+      <form>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="form-group">
+            <label for="name" class="text-lg font-bold mb-2">Name</label>
+            <input type="text" id="name" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600">
+          </div>
+          <div class="form-group">
+            <label for="email" class="text-lg font-bold mb-2">Email</label>
+            <input type="email" id="email" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message" class="text-lg font-bold mb-2">Message</label>
+          <textarea id="message" rows="5" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600"></textarea>
+        </div>
+        <button type="submit" class="bg-red-600 text-white text-lg font-bold px-6 py-2 rounded-md mt-4">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="map py-24">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-12">Find Us</h2>
+      <div class="map-container">
+        <!-- Google Maps code here -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto flex justify-between">
+      <div>&copy; 2022 Restaurant. All rights reserved.</div>
+      <div>
+        <a href="#"><i class="fab fa-facebook-f text-gray-500"></i></a>
+        <a href="#"><i class="fab fa-twitter text-gray-500"></i></a>
+        <a href="#"><i class="fab fa-instagram text-gray-500"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Additional JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animate.css"></script>
+</body>
+
+</html>
